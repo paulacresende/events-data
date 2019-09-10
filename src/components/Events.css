@@ -1,0 +1,140 @@
+.timeline {
+    list-style: none;
+    position: relative;
+    padding: 60px;
+  }
+.timeline:before {
+    content: " ";
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    width: 2px;
+    background-color: #cecbcb;
+    margin-left: -1.5px;
+  }
+  .timeline > li {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .timeline > li:before {
+    content: " ";
+    display: table;
+  }
+  .timeline > li:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+ .timeline-box {
+    position: relative;
+    width: 40%;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 1px 5px rgb(199, 194, 194);
+  }
+  .timeline-box:before {
+    content: " ";
+    position: absolute;
+    top: 13px;
+    right: -15px;
+    display: inline-block;
+  }
+  .timeline-box:after {
+    content: " ";
+    position: absolute;
+    top: 14px;
+    right: -20px;
+    display: inline-block;
+    border-top: 9px solid transparent;
+    border-left: 6px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 9px solid transparent;
+  }
+  .timeline-li > img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    margin-left: -15px;
+  }
+  .timeline > li > .timeline-li > img {
+    height: 100%;
+  }
+  .timeline > li.timeline-li > .timeline-box {
+    left: 5%;
+  }
+  .timeline > li.timeline-li > .timeline-box:before {
+    left: -15px;
+    right: auto;
+  }
+  .timeline > li.timeline-li > .timeline-box:after {
+    left: -13px;
+    right: auto;
+    border-left-width: 0;
+    border-right-width: 14px;
+  }
+
+  .box-info {
+    padding: 10px;
+    min-height: 30px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .box-info > div > img {
+    margin: 0px 5px 0px 0px;
+    height: 15px;
+  }
+  
+  .product-info{
+    padding: 0px 30px 0px 30px;
+    background-color: #fcf9f9;
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .product-info > table {
+    width: 100%;
+  }
+  .product-info > table > thead > tr > th {
+    padding: 6px 6px 6px 0px;
+    width: 83%;
+  }
+
+  .product-info > table > tbody > tr > td {
+    padding: 6px 6px 6px 0px;
+    border-top: 2px solid #ebe8e8;
+  }
+
+  @media (max-width: 700px) {
+    .timeline {
+        padding: 50px;
+      }
+      ul.timeline > li > .timeline-box {
+        margin-left: 10%;
+      }  
+      
+      .box-info {
+        width: 200px;
+        font-size: 80%;
+      }
+      
+      .box-info > div > img {
+        margin: 0px 5px 0px 0px;
+        height: 10px;
+      }
+      
+      .product-info{
+        width: 160px;
+        font-size: 80%;
+      }
+
+    .box-info > div {
+      margin-right: 5px;
+      text-align: center;
+    }
+  }
+  
